@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ms1287/ontologies/2021/10/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/ms1287/ontologies/2021/10/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_feature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_feature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Common_features"/>
+        <rdfs:label>has feature</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_format -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_format">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Format"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) &apos;Data&apos;, or an input, output, input or output argument of an &apos;Operation&apos;. Object B can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. In EDAM, &apos;has_format&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_format_of&apos;.</rdfs:comment>
+        <rdfs:label>has format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_function -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_function">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is (or is in a role of) a function, or an entity outside of an ontology that is (or is in a role of) a function specification. In the scope of EDAM, &apos;has_function&apos; serves only for relating annotated entities outside of EDAM with &apos;Operation&apos; concepts.</rdfs:comment>
+        <rdfs:label>has function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_identifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_identifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. In EDAM, &apos;has_identifier&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_identifier_of&apos;.</rdfs:comment>
+        <rdfs:label>has identifier</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_input -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_input">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_input&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_input&apos; &apos;Data&apos;). The inverse, &apos;is_input_of&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_output -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_output">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_output&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_output&apos; &apos;Data&apos;). The inverse, &apos;is_output_of&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_topic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#has_topic">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. In EDAM, only &apos;has_topic&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; or &apos;Data&apos; &apos;has_topic&apos; &apos;Topic&apos;). The inverse, &apos;is_topic_of&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>has topic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_format_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_format_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:comment>Subject A can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. Object B can be any concept or entity outside of an ontology that is (or is in a role of) &apos;Data&apos;, or  an input, output, input or output argument of an &apos;Operation&apos;. In EDAM, only &apos;is_format_of&apos; is explicitly defined between EDAM concepts (&apos;Format&apos; &apos;is_format_of&apos; &apos;Data&apos;). The inverse, &apos;has_format&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>is format</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_function_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_function_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:comment>Subject A can either be concept that is (or is in a role of) a function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) a function specification. Object B can be any concept or entity. Within EDAM itself, &apos;is_function_of&apos; is not used.</rdfs:comment>
+        <rdfs:label>is function of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_identifier_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_identifier_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Identifier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:comment>Subject A can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, only &apos;is_identifier_of&apos; is explicitly defined between EDAM concepts (only &apos;Identifier&apos; &apos;is_identifier_of&apos; &apos;Data&apos;). The inverse, &apos;has_identifier&apos;, is not explicitly defined.</rdfs:comment>
+        <rdfs:label>is identifier or</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_input_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_input_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_input_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_input&apos;.</rdfs:comment>
+        <rdfs:label>is input of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_output_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_output_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation"/>
+        <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_output_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_output&apos;.</rdfs:comment>
+        <rdfs:label>is output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_topic_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#is_topic_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:comment>Subject A can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, &apos;is_topic_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_topic&apos;.</rdfs:comment>
+        <rdfs:label>is topic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Citizens_texts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Citizens_texts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:label>Citizens produced political texts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Common_features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Common_features">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+        <rdfs:label>Common features</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data">
+        <rdfs:comment>This class is defined as  “Information, represented in an information artefact (data record) that is &apos;understandable&apos; by dedicated computational tools that can use the data as input or produce it as output.”</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Databases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Databases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Format">
+        <rdfs:comment>This class is defined as “A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere.”</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Human-coded_documents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Human-coded_documents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Databases"/>
+        <rdfs:label>Human coded texts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Identifier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Identifier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Common_features"/>
+        <rdfs:comment>text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Operation">
+        <rdfs:comment>This class is defined as “A function that processes a set of inputs and results in a set of outputs, or associates arguments (inputs) with values (outputs).”</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Papers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Papers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Parliament_gov_legal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Parliament_gov_legal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:label>Parliamentary, government and legal texts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Political_organisations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Political_organisations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:label>Texts by political organisations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Raw_data_collections -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Raw_data_collections">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Databases"/>
+        <rdfs:label>Collections of raw text data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic">
+        <rdfs:comment>This class is defined as “A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other.”</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Journalistic,_mass_mediated_political_texts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Journalistic,_mass_mediated_political_texts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ms1287/ontologies/2021/10/OPTED_D9.2#Topic"/>
+        <rdfs:label>Journalistic, mass mediated political texts</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
